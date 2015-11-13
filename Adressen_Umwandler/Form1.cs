@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
+using System.Web;
 using System.IO;
 using System.Net;
 using System.Text.RegularExpressions;
@@ -100,7 +101,8 @@ namespace Adressen_Umwandler
                 String was = textBox_unternehmen.Text;
                 String was2 = was.Replace("ä", "ae");
                 String was3 = was2.Replace("ü", "ue");
-                string code = wc.DownloadString(@"http://www.gelbeseiten.de/" + was3 + "/" +textBox_ort.Text);
+                string html_code = wc.DownloadString(@"http://www.gelbeseiten.de/" + was3 + "/" +textBox_ort.Text);
+                String code = HttpUtility.HtmlDecode(html_code);
                 string suche = "<h1 id=\"yourSearchInfo\">(.*?)</h1>";
                 Regex reg_suche = new Regex(suche, RegexOptions.Singleline | RegexOptions.IgnoreCase);
                 MatchCollection matches_suche = reg_suche.Matches(code);
@@ -173,7 +175,8 @@ namespace Adressen_Umwandler
                     {
                         telefon_out = match_telefon.Groups[1].Value;
 
-                    }               
+                    }
+                    if (telefon_out == "") { telefon_out = "0"; }             
 
                     // Ausgeben
                     string ausgabe = name_out + ";" + strasse_out + ";" + plz_out + ";" + ort_out + ";" + telefon_out;
@@ -299,7 +302,7 @@ namespace Adressen_Umwandler
 
         private void themenkatalogÖffnenToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://www.gelbeseiten.de/#themenkatalog");
+            System.Diagnostics.Process.Start("http://www.gelbeseiten.de/-");
         }
 
         private void dataGridView1_CurrentCellDirtyStateChanged(object sender, EventArgs e)
