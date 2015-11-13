@@ -1,0 +1,10 @@
+C:\Users\Sebastian\Desktop\Projects\Projects\Adressen_Umwandler\Adressen_Umwandler\bin\Release\Gelbe Seiten Adressen Import.exe.config
+C:\Users\Sebastian\Desktop\Projects\Projects\Adressen_Umwandler\Adressen_Umwandler\bin\Release\Gelbe Seiten Adressen Import.exe
+C:\Users\Sebastian\Desktop\Projects\Projects\Adressen_Umwandler\Adressen_Umwandler\bin\Release\Gelbe Seiten Adressen Import.pdb
+C:\Users\Sebastian\Desktop\Projects\Projects\Adressen_Umwandler\Adressen_Umwandler\obj\Release\Adressen_Umwandler.csprojResolveAssemblyReference.cache
+C:\Users\Sebastian\Desktop\Projects\Projects\Adressen_Umwandler\Adressen_Umwandler\obj\Release\Adressen_Umwandler.Form1.resources
+C:\Users\Sebastian\Desktop\Projects\Projects\Adressen_Umwandler\Adressen_Umwandler\obj\Release\Adressen_Umwandler.InfoBox.resources
+C:\Users\Sebastian\Desktop\Projects\Projects\Adressen_Umwandler\Adressen_Umwandler\obj\Release\Gelbe_Seiten_Adressen_Import.Properties.Resources.resources
+C:\Users\Sebastian\Desktop\Projects\Projects\Adressen_Umwandler\Adressen_Umwandler\obj\Release\Adressen_Umwandler.csproj.GenerateResource.Cache
+C:\Users\Sebastian\Desktop\Projects\Projects\Adressen_Umwandler\Adressen_Umwandler\obj\Release\Gelbe Seiten Adressen Import.exe
+C:\Users\Sebastian\Desktop\Projects\Projects\Adressen_Umwandler\Adressen_Umwandler\obj\Release\Gelbe Seiten Adressen Import.pdb
